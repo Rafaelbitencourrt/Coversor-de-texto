@@ -26,13 +26,22 @@ fs.writeFile("./rafael", "Novo conteudo do arquivo", (err) => {
 
 /////////LEITOR/ESCRITOR JSON/////////////////////
 
-const fs = require("fs");
+/* const fs = require("fs");
 
 fs.readFile("./usuario.json", { encoding: "utf-8" }, (erro, dados) => {
   if (erro) {
     console.log("um erro aconteceu");
   } else {
-    var conteudo = dados;
+    var conteudo = JSON.parse(dados);
+
+    conteudo.curso = "rEACT";
+
+    fs.writeFile("./usuario.json", JSON.stringify(conteudo), (erro) => {
+      if (erro) {
+        console.log("um erro aconteceu");
+      }
+    });
     console.log(conteudo);
   }
 });
+ */
