@@ -1,8 +1,13 @@
 class Processor {
   static Process(data) {
-    var a = data.toString("\n");
+    var a = data.toString("\r\n");
+    var rows = [];
 
-    console.log(a);
+    a.forEach((rows) => {
+      var arr = rows.toString(",");
+      rows.push(arr);
+    });
+    console.log(rows);
   }
 }
 
