@@ -1,5 +1,5 @@
 const Reader = require("./Reader");
-const Processor = require("./processor");
+const Processor = require("./Processor");
 
 var leitor = new Reader();
 
