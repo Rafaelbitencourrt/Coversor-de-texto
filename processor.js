@@ -1,6 +1,6 @@
 class Processor {
   static Process(data) {
-    var a = data.split("\n");
+    var a = data.toString("\n");
     console.log(a);
   }
 }
