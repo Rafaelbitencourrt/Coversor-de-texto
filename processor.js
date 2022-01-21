@@ -4,10 +4,10 @@ class Processor {
     var rows = [];
 
     a.forEach((rows) => {
-      var arr = rows.toString(",");
+      var arr = rows.split(",");
       rows.push(arr);
     });
-    console.log(rows);
+    return rows;
   }
 }
 
