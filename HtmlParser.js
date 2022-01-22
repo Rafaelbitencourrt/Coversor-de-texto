@@ -1,7 +1,9 @@
 var eja = require("ejs");
 
 class HtmlParser {
-  static Parse(table) {
-    ejs.renderFile("./table.ejs", { header: table.header });
+  static async Parse(table) {
+    return await ejs.renderFile("./table.ejs", { header: table.header });
   }
 }
+
+module.exports = HtmlParser;
